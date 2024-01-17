@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin The Wheel App</title>
+    <!-- add fevicon -->
+    <link rel="icon" type="image/x-icon" href="./icon/favicon.ico" />
+    <!-- Google Font -->
+ 
+    <h1 style="color:rgb(149, 1, 1);">Irfan Shah Mayeen's BOOK Lottery</h1>
+    
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <canvas id="wheel"></canvas>
+        <button id="spin-btn">Spin</button>
+        <img id="arrow-btn" src="./icon/right-arrow.png" alt="spinner-arrow" />
+      </div>
+      <div>
+        <p id="final-value">Click On The Spin Button To Start</p>
+        
+      </div>
+      <div class="popup" onclick="myFunction()">
+        Show Score Board
+        <span class="popuptext" id="myPopup">
+            <p>My Score</p>
+            <ul id="score-board"></ul>
+        </span>
+      </div>
+    </div>
+
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin for displaying text over chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
